@@ -5,24 +5,12 @@ body {
   padding: 0px;
 }
 
-@media (max-width: 700px) {
-  header #header-right #item {
-    display: none;
-  }
+#bar {
+  display: none;
+}
 
-  .first .textbox h4 {
-    font-size: large;
-  }
-
-  .textbox {
-    position: static;
-    padding: 10px;
-    text-align: center;
-  }
-
-  .textbox h4:nth-of-type(2) {
-    padding-bottom: 0px;
-  }
+.fa {
+  display: none;
 }
 
 header {
@@ -155,6 +143,7 @@ a {
   background-color: rgb(31, 213, 143);
 }
 #div1 img {
+  transition: 0.5s;
   width: 220px;
   aspect-ratio: 1;
 }
@@ -170,6 +159,7 @@ a {
 }
 #div2 img {
   width: 220px;
+  transition: 0.5s;
   aspect-ratio: 1;
 }
 #div2:hover img {
@@ -184,6 +174,7 @@ a {
 }
 #div3 img {
   width: 220px;
+  transition: 0.5s;
   aspect-ratio: 1;
 }
 #div3:hover img {
@@ -198,28 +189,13 @@ a {
 }
 #div4 img {
   width: 220px;
+  transition: 0.5s;
   aspect-ratio: 1;
 }
 
 #div4:hover img {
   width: 260px;
   aspect-ratio: 1;
-}
-
-@media (max-width: 700px) {
-  .second {
-    flex-direction: column;
-  }
-  .all {
-    flex-direction: column;
-  }
-  .all2 {
-    flex-direction: column;
-  }
-
-  #third {
-    padding-top: 50px;
-  }
 }
 
 .second {
@@ -281,6 +257,7 @@ a {
 
 .sub-items:hover img {
   width: 200px;
+  transition: 0.5s;
   aspect-ratio: 1;
 }
 
@@ -305,17 +282,12 @@ a {
   padding: 20px;
   box-sizing: border-box;
   flex-basis: 24%;
-  margin-bottom: 40px;
+  margin: 40px 20px;
 }
 
 .sub-items2:hover {
+  transition: 0.5s;
   box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.2);
-}
-
-@media (max-width: 700px) {
-  .menu {
-    flex-direction: column;
-  }
 }
 
 .forth h4 {
@@ -409,11 +381,6 @@ a {
   font-size: large;
   color: blueviolet;
 }
-@media (max-width: 700px) {
-  .stats {
-    flex-direction: column;
-  }
-}
 
 .seven-div {
   justify-content: space-around;
@@ -474,7 +441,18 @@ a {
   border: 1px solid olivedrab;
 }
 
-@media (max-width: 700px) {
+.footer {
+  margin-top: 20px;
+  background-color: rgba(0, 0, 0, 0.8);
+  color: white;
+  text-align: center;
+  padding: 15px;
+}
+
+@media (max-width: 300px) {
+  .menu {
+    flex-direction: column;
+  }
   .seven-div {
     flex-direction: column;
     text-align: center;
@@ -482,12 +460,132 @@ a {
   .seven-item {
     padding: 20px;
   }
+  .second {
+    flex-direction: column;
+  }
+  .all {
+    flex-direction: column;
+  }
+  .all2 {
+    flex-direction: column;
+  }
+
+  #third {
+    padding-top: 50px;
+  }
+  header #header-right #item {
+    display: none;
+  }
+
+  .first .textbox h4 {
+    font-size: large;
+  }
+
+  .textbox {
+    position: static;
+    padding: 10px;
+    text-align: center;
+  }
+
+  .stats {
+    flex-direction: column;
+  }
+
+  .textbox h4:nth-of-type(2) {
+    padding-bottom: 0px;
+  }
 }
 
-.footer {
-  margin-top: 20px;
-  background-color: rgba(0, 0, 0, 0.8);
-  color: white;
-  text-align: center;
-  padding: 15px;
+@media (max-width: 700px) {
+  .menu {
+    flex-direction: column;
+  }
+  .seven-div {
+    flex-direction: column;
+    text-align: center;
+  }
+  .seven-item {
+    padding: 20px;
+  }
+  .second {
+    flex-direction: column;
+  }
+  .all {
+    flex-direction: column;
+  }
+  .all2 {
+    flex-direction: column;
+  }
+
+  #third {
+    padding-top: 50px;
+  }
+  header #header-right #item {
+    display: none;
+  }
+
+  .first .textbox h4 {
+    font-size: large;
+  }
+
+  .textbox {
+    position: static;
+    padding: 10px;
+    text-align: center;
+  }
+
+  .stats {
+    flex-direction: column;
+  }
+
+  .textbox h4:nth-of-type(2) {
+    padding-bottom: 0px;
+  }
+}
+
+@media (max-width: 1100px) {
+  .menu {
+    flex-direction: column;
+  }
+  .seven-div {
+    flex-direction: column;
+    text-align: center;
+  }
+  .seven-item {
+    padding: 20px;
+  }
+  .second {
+    flex-direction: column;
+  }
+  .all {
+    flex-direction: column;
+  }
+  .all2 {
+    flex-direction: column;
+  }
+
+  #third {
+    padding-top: 50px;
+  }
+  header #header-right #item {
+    display: none;
+  }
+
+  .first .textbox h4 {
+    font-size: large;
+  }
+
+  .textbox {
+    position: static;
+    padding: 10px;
+    text-align: center;
+  }
+
+  .stats {
+    flex-direction: column;
+  }
+
+  .textbox h4:nth-of-type(2) {
+    padding-bottom: 0px;
+  }
 }
