@@ -67,7 +67,7 @@ header p {
       rgba(128, 128, 128, 0.4),
       rgba(128, 128, 128, 0.4)
     ),
-    url(/images//Orange\ Square.jpg);
+    url(images/Orange.jpg);
   background-size: cover;
   background-position: center;
 }
